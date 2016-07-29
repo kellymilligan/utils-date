@@ -11,13 +11,15 @@ define([
     'use strict';
 
     /*
-     *  Get a formatted date using moment.js
-     *
-     *  @param moment - Time data (e.g. unix timestamp)
-     *  @param format - Format key for the time data supplied ('X' is default for unix timestamps)
-     *
-     *  See http://momentjs.com/docs/#/parsing/string-format/ for format options
-     */
+        Generate a formatted date using moment.js
+        ---
+        Format options: http://momentjs.com/docs/#/parsing/string-format/
+
+        moment       Str       Date/Time date in a supported format (e.g. unix timestamp)
+        format       Str       Format key for the supplied moment ('X' is default for unix timestamps)
+
+    */
+
     return function ( moment, format ) {
 
         var CALENDAR_FORMAT = {
